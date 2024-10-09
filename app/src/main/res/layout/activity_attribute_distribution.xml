@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Título da página -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distribuição de Atributos"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Pontos disponíveis -->
+        <TextView
+            android:id="@+id/availablePoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pontos disponíveis: 27"
+            android:textSize="20sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Distribuição de atributos -->
+        <!-- Força -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Força"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/minusStrength"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/strengthValue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="8"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/plusStrength"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Destreza -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Destreza"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/minusDexterity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dexterityValue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="8"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/plusDexterity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Constituição -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Constituição"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/minusConstitution"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/constitutionValue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="8"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/plusConstitution"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Inteligência -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Inteligência"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/minusIntelligence"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/intelligenceValue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="8"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/plusIntelligence"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Sabedoria -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sabedoria"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/minusWisdom"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/wisdomValue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="8"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/plusWisdom"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Carisma -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Carisma"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/minusCharisma"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/charismaValue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="8"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/plusCharisma"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <!-- Botão de concluir criação -->
+        <Button
+            android:id="@+id/finishCreationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concluir Criação"
+            android:textSize="18sp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</ScrollView>
