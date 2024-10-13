@@ -21,35 +21,6 @@
             android:padding="16dp"
             android:textSize="22sp" />
 
-        <!-- Seletor de sexo -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sexo:"
-            android:textSize="22sp"
-            android:layout_marginTop="30dp" />
-
-        <RadioGroup
-            android:id="@+id/genderGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/radioMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="M"
-                android:textSize="22sp" />
-
-            <RadioButton
-                android:id="@+id/radioFemale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="F"
-                android:textSize="22sp" />
-        </RadioGroup>
-
         <!-- Título da lista de raças -->
         <TextView
             android:layout_width="wrap_content"
@@ -58,38 +29,42 @@
             android:textSize="22sp"
             android:layout_marginTop="30dp" />
 
-        <!-- Lista de raças -->
-        <CheckBox
-            android:id="@+id/raceDwarf"
+        <!-- Grupo de seleção de raças -->
+        <RadioGroup
+            android:id="@+id/raceGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Anão"
-            android:textSize="20sp"
-            android:layout_marginTop="15dp" />
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
 
-        <CheckBox
-            android:id="@+id/raceElf"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Elfo"
-            android:textSize="20sp"
-            android:layout_marginTop="15dp" />
+            <RadioButton
+                android:id="@+id/radioDwarf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anão"
+                android:textSize="20sp" />
 
-        <CheckBox
-            android:id="@+id/raceHuman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Humano"
-            android:textSize="20sp"
-            android:layout_marginTop="15dp" />
+            <RadioButton
+                android:id="@+id/radioElf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elfo"
+                android:textSize="20sp" />
 
-        <CheckBox
-            android:id="@+id/raceHalfling"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Halfling"
-            android:textSize="20sp"
-            android:layout_marginTop="15dp" />
+            <RadioButton
+                android:id="@+id/radioHuman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humano"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioHalfling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halfling"
+                android:textSize="20sp" />
+        </RadioGroup>
 
         <!-- Título da lista de classes -->
         <TextView
@@ -99,48 +74,52 @@
             android:textSize="22sp"
             android:layout_marginTop="30dp" />
 
-        <!-- Lista de classes -->
-        <CheckBox
-            android:id="@+id/classWarrior"
+        <!-- Grupo de seleção de classes -->
+        <RadioGroup
+            android:id="@+id/classGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Guerreiro"
-            android:textSize="20sp"
-            android:layout_marginTop="15dp" />
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
 
-        <CheckBox
-            android:id="@+id/classMage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mago"
-            android:textSize="20sp"
-            android:layout_marginTop="15dp" />
+            <RadioButton
+                android:id="@+id/radioWarrior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guerreiro"
+                android:textSize="20sp" />
 
-        <CheckBox
-            android:id="@+id/classRogue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ladino"
-            android:textSize="20sp"
-            android:layout_marginTop="15dp" />
+            <RadioButton
+                android:id="@+id/radioMage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mago"
+                android:textSize="20sp" />
 
-        <CheckBox
-            android:id="@+id/classCleric"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clérigo"
-            android:textSize="20sp"
-            android:layout_marginTop="15dp" />
+            <RadioButton
+                android:id="@+id/radioRogue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ladino"
+                android:textSize="20sp" />
 
-        <!-- Botão Próxima Página -->
+            <RadioButton
+                android:id="@+id/radioCleric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clérigo"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <!-- Botão Criar Personagem -->
         <Button
-            android:id="@+id/distributeAttribute"
+            android:id="@+id/createCharacterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="#5FBF3B"
             android:padding="20dp"
-            android:text="Próxima página"
+            android:text="Criar Personagem"
             android:textSize="20sp" />
 
     </LinearLayout>
