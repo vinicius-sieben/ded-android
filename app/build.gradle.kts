@@ -50,6 +50,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.compose.material3:material3-android:1.3.1")
     val room_version = "2.6.1"
 
     implementation("androidx.core:core-ktx:1.9.0")
